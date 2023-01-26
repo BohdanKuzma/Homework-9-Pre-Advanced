@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+
+
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.head {
+    padding-top: 20px;
+}
+
+.table {
+    width: 100%;
+}
+
+.right {
+    width: 50%;
+}
+
+.h {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.input_login,
+.input_password,
+.input_email {
+    width: 600px;
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    border: 2px solid lightgrey;
+    outline: none;
+
+}
+
+.input_login::placeholder {
+    font-size: 16px;
+}
+
+.input_password::placeholder {
+    font-size: 16px;
+}
+
+.input_email::placeholder {
+    font-size: 16px;
+}
+
+.add_user,
+.edit_user {
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    background: transparent;
+    border-radius: 10px;
+    border: none;
+    border: 2px solid #44bd32;
+    color: #44bd32;
+}
+
+.add_user:hover {
+    background-color: #44bd32;
+    cursor: pointer;
+    color: #fff;
+    transition-duration: 0.4s;
+}
+
+.edit_user:hover {
+    background-color: #44bd32;
+    cursor: pointer;
+    color: #fff;
+    transition-duration: 0.4s;
+}
+
+td {
+    text-align: center;
+    font-size: 18px;
+}
+
+th {
+    font-size: 20px;
+}
+
+.btn_edit {
+    width: 83px;
+    height: 35px;
+    background-color: #f6b93b;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn_delete {
+    width: 83px;
+    height: 35px;
+    background-color: #e55039;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 1250px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 100px;
+       
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .input_login, .input_password, .input_email{
+        width: 100%;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .right{
+        margin-top: 50px;
+    }
+}
